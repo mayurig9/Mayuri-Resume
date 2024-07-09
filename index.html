@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayuri Gorhe - Full Stack Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="MayuriGorhe.pdf" download class="download-btn">Download CV</a>
+    </header>
+    <div class="landing-page">
+        <div class="left-half">
+            <div class="landing-content">
+                <h1>Mayuri Gorhe</h1>
+                <p class="subtitle">Software Development Engineer</p>
+                <nav>
+                    <ul>
+                        <li><a href="experience.html">Experience</a></li>
+                        <li><a href="skills.html">Skills</a></li>
+                        <li><a href="certificates.html">Certificates</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="right-half">
+            <div class="landing-image">
+                <img src="mayuri.jpg" alt="Mayuri Gorhe">
+            </div>
+        </div>
+    </div>
+    <div id="contact" class="contact-page">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:gorhemayuris@gmail.com">gorhemayuris@gmail.com</a></p>
+        <p>Phone: <a href="tel:7734497916">7734497916</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/mgorh" target="_blank">https://www.linkedin.com/in/mgorh</a></p>
+        <p>Location: Dublin, CA</p>
+    </div>
+    <script>
+        // Smooth scrolling to the entire page
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                window.scrollTo({
+                    top: target.offsetTop,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

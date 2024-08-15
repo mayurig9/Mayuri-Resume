@@ -13,8 +13,8 @@ body {
 
 header {
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 20px;
+    right: 10px;
 }
 
 .download-btn {
@@ -61,16 +61,23 @@ header {
     height: 100vh;
 }
 
-.left-half{
+.landing-page header {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    font-weight: bold;
+}
+
+.left-half {
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:rgb(98, 209, 209);
+    background-color: rgb(98, 209, 209);
 }
 
 .right-half {
-    flex: 1;
+    flex: 0.5;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -80,20 +87,22 @@ header {
     text-align: center;
     max-width: 600px;
     padding: 20px;
+    margin-top: 10%;
 }
 
 .landing-content h1 {
-    font-family: 'Brush Script MT', sans-serif;
-    font-size: 6.5em;
+    font-family:'Montserrat', sans-serif;
+    font-size: 4em;
+    font-weight: bold;
     color: #333;
-    margin-bottom: 10px;
     letter-spacing: 2px;
+    padding-bottom: 3%;
 }
 
 .subtitle {
     font-size: 1.5em;
     color: #666;
-    margin-bottom: 20px;
+    margin-bottom: 3%;
 }
 
 nav ul {
@@ -120,10 +129,9 @@ nav ul li a:hover {
     color: #007bff;
 }
 
-
 .landing-image {
     text-align: center;
-    width: 75%;
+    width: 80%;
 }
 
 .landing-image img {
@@ -132,6 +140,18 @@ nav ul li a:hover {
     border-radius: 50%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+.landing-content p{
+    font-style: italic;
+    font-size: 1.3em;
+    color: #333;
+    font-family: 'Merriweather', serif;
+
+    padding-left: 1em;
+    margin: 1em 0;
+    position: relative;
+}
+
 
 
 /* Contact page styles */
@@ -146,23 +166,30 @@ nav ul li a:hover {
     flex-direction: column;
     text-align: center;
     color: #111010;
-    padding: 50px;
+    padding: 100px;
+    font-family: 'Garamond', serif;
 }
 
 .contact-page h2 {
     font-size: 3em;
     margin-bottom: 20px;
+    margin-left: 250px;
+    font-weight: bold;
+}
+
+.contact-page p {
+    font-weight: bold;
 }
 
 .contact-details {
     text-align: left;
     max-width: 600px;
+    margin-left: 300px; /* Move contact details to the right */
 }
 
 .contact-details p {
     font-size: 1.5em;
     margin-bottom: 10px;
-    font-weight: bold;
 }
 
 .contact-page a {
@@ -173,4 +200,119 @@ nav ul li a:hover {
 .contact-page a:hover {
     color: #007bff;
     text-decoration: underline;
+}
+
+/* Certification page styles */
+
+.certificates-page {
+    background-image: url('certificates-background.png');
+    background-size: cover;
+    height: 100vh; /* Ensure the contact page takes the full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: #111010;
+    padding: 100px;
+    font-family: 'Garamond', serif;
+}
+
+.certificates-page h2 {
+    font-family: 'Garamond', serif;
+    font-size: 4em;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.certificates-details {
+    max-width: 600px;
+    font-size: 2em;
+    margin-bottom: 10%;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Experience page style */
+
+.experience-page {
+    background-image: url('experience-background.jpg');
+    background-size: cover;
+    height: 100vh; /* Ensure the contact page takes the full viewport height */
+    display: flex;
+    
+    flex-direction: column;
+}
+
+.experience-page h1{ 
+    justify-content: left;
+    font-weight: bold;
+    align-items: top;
+  
+    font-size: 4em;
+    text-align: left;
+    color: #ffffff;
+    font-family: 'Garamond', serif;
+    position: relative;
+}
+
+.experience-details {
+    justify-content: left;
+    font-weight: bold;
+    align-items: top;
+    margin-top: 3%;
+    margin-bottom: 5%;
+    text-align: left;
+    color: #ffffff;
+    
+    font-family: 'Garamond', serif;
+}
+
+/* Education page style */
+
+.education-page {
+    background-image: url('education-background.jpg');
+    background-size: cover;
+    height: 100vh; /* Ensure the contact page takes the full viewport height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.education-page h1{
+    justify-content: center;
+    font-weight: bold;
+    align-items: top;
+    margin-left: 30%;
+    font-size: 4em;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Garamond', serif;
+    position: relative;
+}
+
+.education-page h1::after {
+    content: '';
+    display: block;
+    width: 100%; /* Adjust width as needed */
+    height: 4px; /* Adjust height as needed */
+    background: linear-gradient(to right, #f8fafa, #0385c2); /* Fancy gradient underline */
+    position: absolute;
+    bottom: -10px; /* Adjust distance from the text */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.education-details {
+    justify-content: center;
+    font-weight: bold;
+    align-items: top;
+    margin-top: 3%;
+    margin-left: 30%;
+    margin-bottom: 5%;
+    text-align: center;
+    color: #ffffff;
+    
+    font-family: 'Garamond', serif;
 }
